@@ -1,3 +1,6 @@
+#Relevancia: Se emplean la diagonalizacion de matrices, valores y vectores propios
+
+
 #Planteamiento del problema: Calcular una matriz con padres con gentotipo A xAa.
 #Las diferentes posibiliddes para los machos son A o a y para las hembras AA o aa
 # con probabilidades de 1/4 equitativamente para genotipo A x AA,A x Aa, a x AA, 
@@ -11,7 +14,7 @@
 #a × Aa  0        0.25       1      0       0.25    0
 #a × aa  0        0          0      0       0.25    1
 
-library(matlib)
+library(matlib) #libreria para funcion inv
 
 her_crom<- function(n){ 
 #matriz de probabilidades
@@ -44,7 +47,12 @@ her_crom (100) # n= generaciones,
 #de tener que pareja hermano y hermana sean del tipo A x Aa en 1/3 
 #y tipo a x aa solo de 1/3
 
+
+#conclusión:se comprobo que es replicable con funciones de Rstudio el modelo matematico
+#de distribucion de genotipos en la descendencia.
+
+
 # referencias:
-#https://repositorio.unprg.edu.pe/bitstream/handle/20.500.12893/442/BC-TES-4154.pdf?sequence=1&isAllowed=y
+
 #http://matema.ujaen.es/jnavas/web_modelos/pdf_mmb08_09/modelos%20matriciales.pdf
 #https://cran.r-project.org/web/packages/matlib/vignettes/inv-ex1.html
